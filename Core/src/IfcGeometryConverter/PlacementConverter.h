@@ -265,6 +265,10 @@ namespace OpenInfraPlatform {
 							}
 
 						}
+						else if (std::dynamic_pointer_cast<typename IfcEntityTypesT::IfcLinearPlacement>(object_placement)) {
+							BLUE_LOG(warning) << "#" << object_placement->getId() << ": IfcLinearPlacement not implemented yet!";
+						}
+
 						matrix = object_placement_matrix;
 					}
 
